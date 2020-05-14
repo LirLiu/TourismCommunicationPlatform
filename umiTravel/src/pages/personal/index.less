@@ -1,0 +1,147 @@
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  white-space: normal;
+}
+
+// 个人信息页面
+.personalInfo {
+  width: 100%;
+  position: relative;
+}
+
+.piHeadBg {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  z-index: 0;
+  overflow: hidden;
+  background: url('../../assets/personBg.jpg');
+  background-position: center;
+  filter: blur(10px);
+}
+
+.piWrapper {
+  padding-top: 15px;
+  width: 1120px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 100;
+
+  >div {
+    &:first-child {
+      position: relative;
+      height: 235px;
+      background: url('../../assets/personBg.jpg');
+      background-position: center;
+    }
+
+    &:last-child {
+      position: relative;
+    }
+  }
+}
+
+.piHeadName {
+  position: absolute;
+  padding: 5px 0 16px 180px;
+  height: 28px;
+  margin-top: 141px;
+  z-index: 101;
+
+  >span {
+    line-height: 1.1;
+
+    &:first-child {
+      font-weight: 500;
+      font-size: 22px;
+      float: left;
+      margin-right: 17px;
+    }
+
+    &:last-child {
+      font-size: 14px;
+      float: left;
+      padding-top: 10px;
+      margin-right: 17px;
+    }
+  }
+}
+
+.piHeadAvatar {
+  position: absolute;
+  bottom: -30px;
+  background-color: #fff;
+  padding: 4px 4px 50px;
+  margin-left: 28px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  z-index: 5;
+}
+
+.piModule {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  opacity: .56;
+
+  >ul {
+    font-size: 0;
+    padding-left: 160px;
+
+    li {
+      line-height: 40px;
+      font-size: 14px;
+      float: left;
+
+      a {
+        padding: 0 24px;
+        border-right: 1px solid #e9e9e9;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.piContent {
+  padding: 40px 10px;
+}
+
+
+// basicInfo组件样式
+.basicInfo {
+  display: flex;
+
+  >div {
+    &:first-child {
+      width: 200px;
+      height: 45px;
+      line-height: 45px;
+      font-size: 14px;
+      color: #ffffff;
+      padding-left: 20px;
+      background-color: #4d667a;
+      border-radius: 3px;
+    }
+
+    &:last-child {
+      padding: 20px;
+
+      flex: 1;
+      margin-left: 20px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+      background-color: #fff;
+      border-radius: 3px;
+      margin-bottom: 15px;
+    }
+  }
+
+}

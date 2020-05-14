@@ -1,0 +1,67 @@
+p {
+  white-space: normal;
+}
+
+.faqDetail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background: #ffffff;
+}
+
+.adWrapper {
+  width: 1200px;
+  box-shadow: 0 0 3px #eeeeee;
+}
+
+.fdQuestion {
+  display: flex;
+  margin-top: 20px;
+
+  >div {
+    &:first-child {
+      width: calc(100% - 300px);
+
+      >h3 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      >p {
+        font-size: 16px;
+        color: #000;
+        padding: 0 10px 12px;
+        line-height: 32px;
+      }
+
+      >span {
+        color: #999;
+        font-size: 12px;
+        margin: 3px 0 0 25px;
+      }
+    }
+
+    &:last-child {
+      background-color: #fbfbfb;
+      width: 300px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        width: 180px;
+        height: 40px;
+        border-radius: 20px;
+
+        &:first-child {
+          background: #4f7195;
+          margin-bottom: 10px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

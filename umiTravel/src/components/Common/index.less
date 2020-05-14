@@ -1,0 +1,173 @@
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+p {
+  white-space: normal;
+}
+
+:global {
+  .site-page-header {
+    padding: 0 0 10px;
+  }
+
+  .ant-page-header-heading-title {
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .ant-breadcrumb-link,
+  .ant-page-header-heading-sub-title {
+    font-size: 12px;
+  }
+}
+
+.childHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fbfbfb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.chWrapper {
+  width: 1200px;
+}
+
+.chButton {
+  border-radius: 18px;
+  background: #ff7f00;
+  color: #ffffff;
+}
+
+// remarkOn组件样式
+
+.roEditor {
+  height: 88px;
+
+  textarea {
+    width: 88%;
+    height: 100%;
+    resize: none;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #f4f4f4;
+  }
+
+  button {
+    width: 12%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: rgb(255, 141, 106);
+  }
+}
+
+// breadCrumbs组件样式
+.breadCrumb {
+  width: 1200px;
+
+  :global {
+    .ant-breadcrumb {
+      display: flex;
+
+      >span {
+        height: 30px;
+        background: #e5e4e3;
+
+        &:last-child {
+          flex: 1;
+          background: #f4f4f4;
+        }
+      }
+
+      .ant-breadcrumb-link {
+        padding: 0 10px;
+        line-height: 26px;
+      }
+
+      .ant-breadcrumb-separator {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Area组件样式
+.area {
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 0 2px #ddd;
+
+
+  >dl {
+    display: table;
+    border-bottom: #d8d8d8 solid 1px;
+    width: 100%;
+    margin: 0;
+    padding: 11px 0px 6px 0px;
+    background: url(http://static.8264.com/static/image/common/bbsnavbg.jpg) -21px 0px repeat-y;
+
+    >dt {
+      float: left;
+      width: 94px;
+      margin: 0px;
+      padding: 0px;
+      text-indent: 15px;
+      height: 100%;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    >dd {
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      font-size: 12px;
+
+      >a {
+        margin: 0px 20px 5px 0px;
+        display: inline-block;
+        white-space: nowrap;
+      }
+    }
+
+    .clearfix();
+  }
+}
+
+.areaLink {
+  color: #000000;
+}
+
+.linkActive {
+  background: #0f1f2b;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+//remarkOn
+.remarkOn {
+  :global {
+    .ant-list {
+      .ant-comment-inner {
+        background: #f6f6f6;
+        border-radius: 5px;
+        border-bottom: 1px solid #eee;
+        box-shadow: 0 0 0 3px #eeeeee;
+      }
+
+      .ant-comment-avatar {
+        margin-left: 10px;
+      }
+    }
+  }
+}

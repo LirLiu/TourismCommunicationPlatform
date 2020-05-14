@@ -1,0 +1,116 @@
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  white-space: normal;
+}
+
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+// 约伴页面样式
+.aboutWith {
+  width: 100%;
+  background: #ffffff;
+}
+
+.awWrapper {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 30px;
+}
+
+
+
+.awPane {
+  box-shadow: 0 0 3px #ddd;
+  height: 39px;
+  background: #404452 top left repeat-x;
+  margin: 15px auto 15px auto;
+  border-radius: 5px;
+
+  >ul {
+
+    li {
+      font-size: 0;
+      float: left;
+
+      >a {
+        padding: 0px 14px 0px 14px;
+        line-height: 38px;
+        font-size: 14px;
+        display: inline-block;
+        border-radius: 3px;
+
+        &:active {
+          background: #f9f9f9;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .clearfix();
+  }
+}
+
+.paneLink {
+  color: #ffffff;
+}
+
+.paneActive {
+  background: #f3f3f3;
+  color: #000000;
+}
+
+.awList {
+  box-shadow: 0 0 2px #ddd;
+}
+
+.awBlock {
+  width: 300px;
+  display: inline-block;
+  padding: 12px 14px 10px 15px;
+  border-right: #ddd solid 1px;
+  border-bottom: #ddd solid 1px;
+
+  >a {
+    color: #000000;
+    display: flex;
+
+    >div {
+      &:first-child {
+        width: 112px;
+        height: 160px;
+        background: #e75040;
+        border-radius: 8px;
+
+        >img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &:last-child {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column
+      }
+    }
+
+    .clearfix();
+  }
+}
