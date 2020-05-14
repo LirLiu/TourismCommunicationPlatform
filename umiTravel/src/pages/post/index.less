@@ -1,0 +1,83 @@
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+a {
+  color: #000000;
+}
+
+p {
+  white-space: normal;
+}
+
+// 分享帖页面样式
+.forumPosts {
+  width: 100%;
+  background: #ffffff;
+}
+
+.fpWrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background: #ffffff;
+  box-shadow: 0 0 3px #eeeeee;
+}
+
+.fqSend {
+  padding-top: 20px;
+  background: #ffffff;
+
+  button {
+    width: 180px;
+    height: 50px;
+    background: #ff7f00;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 0;
+  }
+
+  .clearfix();
+}
+
+.fqPagination {
+  float: right;
+  margin-top: 20px;
+}
+
+// listModule组件样式
+.listModule {
+  :global {
+    .ant-tabs-bar {
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    .ant-tabs {
+      background: #ffffff;
+    }
+
+    .ant-table-thead,
+    .ant-table-tbody {
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      td {
+        background: #ffffff;
+      }
+
+      th {
+        background: #f6f6f6;
+      }
+    }
+  }
+}

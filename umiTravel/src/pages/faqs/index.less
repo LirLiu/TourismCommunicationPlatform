@@ -1,0 +1,130 @@
+p {
+  white-space: normal;
+}
+
+// faqs模块index文件样式
+.questionAnswer {
+  width: 100%;
+  background: #ffffff;
+}
+
+.qaWrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: 0 0 2px #ebebeb;
+}
+
+.qaLeft {}
+
+.qaRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+}
+
+// 搜索结果列表模块样式
+.noteList {
+  width: 680px;
+  padding: 10px 5px;
+
+  :global {
+    .ant-list-item-meta {
+      margin: 0;
+
+      .ant-list-item-meta-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// 搜索模块样式
+.searchModule {
+  width: 680px;
+  padding: 16px;
+  background: #eeeeee;
+}
+
+// 标签模块样式
+.tagsModule {
+  width: 680px;
+  padding: 30px 0px;
+
+  :global {
+    .ant-tag {
+      font-size: 14px;
+      padding: 0 10px;
+      border-radius: 3px;
+      line-height: 28px;
+    }
+  }
+
+  >div {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 2px #ebebeb inset;
+    margin-top: 8px;
+
+    >p {
+      width: 100px;
+      line-height: 28px;
+      text-align: center;
+      box-shadow: 0 0 5px #ebebeb;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+// 我要提问模块样式
+.askModule {
+  width: 260px;
+  background: #eeeeee;
+  padding: 17px 0;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+
+  >button {
+    width: 180px;
+    height: 40px;
+    background: #4f7195;
+    border-radius: 20px;
+    color: #ffffff;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
+
+// waitQuestion模块样式
+.waitQuestion {
+  width: 300px;
+
+  :global {
+    .ant-list-item {
+      padding: 0;
+      line-height: 48px;
+      padding-bottom: 20px;
+    }
+
+    .ant-list-item-meta {
+      margin: 0;
+
+      .ant-list-item-meta-title {
+        margin: 0;
+        padding: 13px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}

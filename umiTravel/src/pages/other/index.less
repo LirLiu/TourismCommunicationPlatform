@@ -1,0 +1,73 @@
+p {
+  white-space: normal;
+}
+
+.inAddition {
+  width: 100%;
+}
+
+.iaWrapper {
+
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+// scenicSpot组件样式
+.scenicSpot {
+  margin-top: 20px;
+
+  :global {
+    .ant-card-grid {
+      padding: 10px;
+    }
+  }
+}
+
+.cardGrid {
+  >div {
+    width: 220px;
+    height: 166px;
+
+    >img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// webAbout组件样式
+.webAbout {
+  display: flex;
+
+  >div {
+    &:first-child {
+      width: 256px;
+      height: 200px;
+
+      >img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &:last-child {
+      flex: 1;
+
+      :global {
+        .ant-list-header {
+          color: #013d74;
+        }
+
+        .ant-spin-container {
+          background: #ffffff;
+        }
+
+        .ant-col {
+          text-align: center;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
